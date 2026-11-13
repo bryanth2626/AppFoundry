@@ -3,5 +3,18 @@
     "dotenv": "^18.0.10",
     "express": "^5.3.0",
     "multer": "^2.5.0"
-  }
+  },
+  "name": "foundry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ocr.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Brayan Tasayco",
+  "license": "ISC",
+  "type": "module"
 }
