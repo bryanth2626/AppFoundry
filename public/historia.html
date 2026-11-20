@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Historia del Perú</title>
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+  <header class="portada">
+    <div class="ancho">
+      <h1>Historia del Perú</h1>
+      <p>Haz preguntas sobre el Perú prehispánico, el virreinato y la república.</p>
+    </div>
+  </header>
+
+  <main class="ancho distribucion">
+    <section class="panel conversacion" aria-labelledby="titulo-chat">
+      <div class="cabecera-chat">
+        <span class="marca" aria-hidden="true">HP</span>
+        <h2 id="titulo-chat">Conversación</h2>
+      </div>
+
+      <div id="mensajes" class="historial" role="log" aria-label="Mensajes">
+        <div class="mensaje">
+          <strong>Asistente</strong>
+          <p>¡Hola! ¿Qué te gustaría saber sobre la historia del Perú?</p>
+        </div>
+      </div>
+
+      <form id="chat" class="formulario">
+        <label for="pregunta">Tu pregunta</label>
+        <div class="entrada">
+          <input id="pregunta" required autocomplete="off" placeholder="Escribe aquí…">
+          <button class="enviar" type="submit">Enviar</button>
+        </div>
+        <p id="estado" class="estado" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <template id="plantilla-mensaje">
+    <div class="mensaje">
+      <strong></strong>
+      <p></p>
+    </div>
+  </template>
+
+  <script src="/js/historia.js"></script>
+</body>
+</html>
